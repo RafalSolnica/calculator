@@ -1,3 +1,12 @@
-export function App() {
-  return <div className="container">Test</div>;
+import { Container } from "./Container";
+import { Calculator } from "./Calculator";
+
+function App() {
+  return (
+    <Container>
+      <Calculator />
+    </Container>
+  );
 }
+
+export default App;
