@@ -11,6 +11,7 @@ export const StyledCalculator = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  user-select: none;
 `;
 
 export const Screen = styled.div`
@@ -20,6 +21,11 @@ export const Screen = styled.div`
   background-color: ${({ theme }) => theme.color.mineShaft};
   box-shadow: inset 0px 0px 10px ${({ theme }) => theme.color.darkGrey};
   border-radius: 15px;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.color.tundora};
+  }
 `;
 
 export const UpperScreen = styled.div`
@@ -28,6 +34,10 @@ export const UpperScreen = styled.div`
   background-color: ${({ theme }) => theme.color.tundora};
   box-shadow: inset 0px 0px 10px ${({ theme }) => theme.color.doveGrey};
   font-size: 1.7rem;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.color.emperor};
+  }
 `;
 
 export const LowerScreen = styled.div`
@@ -35,4 +45,18 @@ export const LowerScreen = styled.div`
   border-radius: 0px 0px 15px 15px;
   background-color: ${({ theme }) => theme.color.emperor};
   font-size: 1.4rem;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.color.doveGrey};
+  }
+`;
+
+export const Keyboard = styled.div`
+  padding: 20px;
+  border-radius: 25px;
+  background-color: ${({ theme }) => theme.color.mineShaft};
+  box-shadow: inset 0px 0px 25px ${({ theme }) => theme.color.darkGrey};
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 `;
