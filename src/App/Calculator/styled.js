@@ -21,7 +21,7 @@ export const Screen = styled.div`
   background-color: ${({ theme }) => theme.color.mineShaft};
   box-shadow: inset 0px 0px 10px ${({ theme }) => theme.color.darkGrey};
   border-radius: 15px;
-  transition: 0.3s;
+  transition: 0.7s;
 
   &:hover {
     background-color: ${({ theme }) => theme.color.tundora};
@@ -34,9 +34,10 @@ export const UpperScreen = styled.div`
   background-color: ${({ theme }) => theme.color.tundora};
   box-shadow: inset 0px 0px 10px ${({ theme }) => theme.color.doveGrey};
   font-size: 1.7rem;
+  transition: 0.7s;
 
   &:hover {
-    background-color: ${({ theme }) => theme.color.emperor};
+    background-color: ${({ theme }) => theme.color.doveGrey};
   }
 `;
 
@@ -45,6 +46,7 @@ export const LowerScreen = styled.div`
   border-radius: 0px 0px 15px 15px;
   background-color: ${({ theme }) => theme.color.emperor};
   font-size: 1.4rem;
+  transition: 0.7s;
 
   &:hover {
     background-color: ${({ theme }) => theme.color.doveGrey};

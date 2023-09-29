@@ -34,7 +34,7 @@ export const Calculator = () => {
         <Key symbol="4" action={welcome} />
         <Key symbol="5" action={welcome} />
         <Key symbol="6" action={welcome} />
-        <Key symbol="×" action={welcome} />
+        <Key symbol="x" action={welcome} />
         <Key symbol="7" action={welcome} />
         <Key symbol="8" action={welcome} />
         <Key symbol="9" action={welcome} />
