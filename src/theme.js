@@ -1,5 +1,6 @@
 export const theme = {
   color: {
+    darkGrey: "#111",
     codGrey: "#222",
     mineShaft: "#333",
     tundora: "#444",
